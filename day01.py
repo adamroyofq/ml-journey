@@ -10,14 +10,14 @@ print(f"Сумма: {total}, среднее: {average:.2f}")
 
 #поиск максимального и минимального числа в списке без max/min
 numbers = [6, 4, 21, 8, 19, 43, 24, 35]
-MaxNumber = 0
+MaxNumber = numbers[-1]
 MinNumber = numbers[0]
 
 for number in numbers:
-    if MaxNumber < numbers[number]:
-        MaxNumber = numbers[number]
-    if MinNumber > numbers[number]:
-        MinNumber = numbers[number]
+    if MaxNumber < number:
+        MaxNumber = number
+    if MinNumber > number:
+        MinNumber = number
 
 print(f"Максимальное число {MaxNumber}, а минимальное {MinNumber}")
 
