@@ -4,17 +4,17 @@ import matplotlib.pyplot as plt
 # чтение таблицы
 df = pd.read_csv("sales.csv")
 
-# вывод размеров и колличества пропусков по столбцам
+# вывод размеров и количества пропусков по столбцам
 print(df.shape)
 print(df.isna().sum())
 
 
 # удаление пропусков и запись в переменную таблицы без них
 clear_df = df.dropna()
-print(len(clear_df)) # вывод колличества оставшихся строк
+print(len(clear_df)) # вывод количества оставшихся строк
 
 
-# создание столдца revenue в clear_df (price * quantity)
+# создание столбца revenue в clear_df (price * quantity)
 clear_df["revenue"] = clear_df["price"] * clear_df["quantity"]
 print(clear_df)
 
