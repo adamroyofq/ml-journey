@@ -29,4 +29,3 @@ plt.xlabel("День")
 plt.ylabel("Температура")
 plt.savefig("temps.png")
 plt.show()
-
