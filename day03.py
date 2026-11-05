@@ -44,6 +44,3 @@ top_students = [student["name"] for student in students if student["grade"] == 5
 
 print(average_grade(students))
 print(top_students)
-
-
-
