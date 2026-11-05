@@ -41,4 +41,3 @@ top_city_name = revenue_by_city.idxmax()
 
 # вывод города с максимальной выручкой и самой суммы выручки
 print(f"{top_city_name}: {top_city_sum}")
-
